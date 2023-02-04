@@ -1,0 +1,30 @@
+.card-creation{
+    background-color: $white-four;
+
+    &__title::first-letter{
+        text-transform: uppercase;
+    }
+    &__title{
+        color: $dull-orange;
+        font-family:$font-Merriweather;
+        font-size: 1.92rem;
+    }
+    &__paragraph::first-letter{
+        text-transform: uppercase;
+    }
+    &__paragraph{
+        color: $dark-green-blue;
+        font-family:$font-OpenSans;
+        font-size: 1.28rem;
+    }
+    &__div{
+        width: 268px;
+        height: 73.8px;
+        border: solid 1.6px $dull-orange;
+        margin: 17.8px 0 0 2px;
+        padding: 15px 20px 9.8px 20px;
+        &--desing{
+            color: $dull-orange;
+        }
+    }
+}
