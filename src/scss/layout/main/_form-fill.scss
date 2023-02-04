@@ -1,5 +1,39 @@
 .form--rellena {
     display: flex;
     flex-direction: column;
-    align-items:flex-start
+    align-items:flex-start;
+    width: 100vw;
+    padding-left: 2.0rem;
+    padding-right: 2.0rem;
+    padding-top: 1.3rem;
+
+    .fa-regular {
+        color: $dull-orange;
+        font-size: 2rem;
+        position: relative;
+        transform: translateY(20px);
+    }
+
+    .line {
+
+        color: $white-three;
+    }
+    .title-fill {
+        color: $gunmetal;
+        font-family:$font-OpenSans;
+        font-weight:bold;
+        padding-left: 2.9rem;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        padding-bottom: 2.5rem;
+    }
+
+    .box{
+        border-color: $hospital-green;
+        margin-top: 0.7rem;
+        margin-bottom: 2.0rem;
+        width: 100vw;
+    }
+
+
 }
