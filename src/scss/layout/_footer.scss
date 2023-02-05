@@ -21,3 +21,13 @@
         margin: 12px 47px 0 48px;
     }
 }
+
+@media (min-width:768px){
+
+    .footer{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 40px 10px 41px;
+    }
+}
