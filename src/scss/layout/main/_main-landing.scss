@@ -1,5 +1,8 @@
 .card-creation{
     background-color: $white-four;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__title::first-letter{
         text-transform: uppercase;
@@ -8,23 +11,45 @@
         color: $dull-orange;
         font-family:$font-Merriweather;
         font-size: 1.92rem;
+        font-weight: 900;
+        line-height: normal;
     }
     &__paragraph::first-letter{
         text-transform: uppercase;
     }
     &__paragraph{
+        width: 264.8px;
+        height: 38.4px;
         color: $dark-green-blue;
         font-family:$font-OpenSans;
         font-size: 1.28rem;
+        line-height: normal;
+        // margin: 0 1.6px 17.8px 1.6px;
+        text-align: center;
     }
     &__div{
         width: 268px;
         height: 73.8px;
         border: solid 1.6px $dull-orange;
+        opacity: 0.21;
+        border-radius: 4px;
         margin: 17.8px 0 0 2px;
-        padding: 15px 20px 9.8px 20px;
+        // padding: 15px 20px 9.8px 20px;
         &--desing{
             color: $dull-orange;
         }
+    }
+    &__buttom{
+        width: 129px;
+        height: 42px;
+        margin: 38px 0 30px 0;
+        background-color:$dirty-blue;
+        border: solid $dirty-blue;
+        border-radius: 21px;
+        text-transform: uppercase;
+        color:$white-two;
+        font-family:$font-OpenSans;
+        font-size: 1.6rem;
+        font-weight: 600;
     }
 }
