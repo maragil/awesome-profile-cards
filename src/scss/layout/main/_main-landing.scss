@@ -31,15 +31,24 @@
         width: 268px;
         height: 73.8px;
         border: solid 1.6px $dull-orange;
-        opacity: 0.21;
+        // opacity: 0.21;
         border-radius: 4px;
-        margin: 17.8px 0 0 2px;
-        // padding: 15px 20px 9.8px 20px;
+        margin: 17.8px 2px 0 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &--item{
+            font-size: 1.28rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column-reverse;
+            color: $gunmetal;
+            font-family: $font-OpenSans;
+        }
         }
 
-        .fa-object-ungroup{
-            color: black;
-        }
     &__button{
         padding: 12px 22px;
         margin: 38px 0 30px 0;
@@ -53,4 +62,11 @@
         font-size: 1.6rem;
         font-weight: 600;
     }
+}
+
+.fa-object-ungroup, .fa-keyboard, .fa-share-nodes{
+            color: $dull-orange;
+            font-size: 2.24rem;
+            width: 60px;
+
 }
