@@ -53,6 +53,7 @@
       margin-top: 0.7rem;
       margin-bottom: 2rem;
       width: 100%;
+      height: 3rem;
     }
 
     &--boxes {
@@ -72,7 +73,7 @@
         border-radius: 3px;
         padding-left: 2.2rem;
         padding-right: 2.2rem;
-        
+
       }
       &--square {
         border: solid 1px;
@@ -86,9 +87,11 @@
 
   ::placeholder {
     color: #c5c5c5;
+    width: 100%;
     font-size: 1.4rem;
     padding-left: 0.9rem;
     font-family: $font-OpenSans;
+    background-color: $white-four;
   }
 
   .fa-sharp {
