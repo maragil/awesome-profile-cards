@@ -1,4 +1,4 @@
-.section__preview {
+.preview {
   background-image: linear-gradient(to bottom, $silver, $pale-grey);
   height: 50vh;
   display: flex;
@@ -9,10 +9,15 @@
   @media all and (min-width: 768px) {
     height: 100vh;
     border-radius: 0.6rem;
-
+    justify-content: center;
+    padding: 0 4.8rem;
   }
 
-  &--reset {
+  @media all and (min-width:1024px) {
+    width: 70vw;
+  }
+
+  &__reset {
     height: 2.5rem;
     width: 7.5rem;
     border: solid 1px $white-two;
@@ -30,7 +35,7 @@
     }
   }
 
-  &--card {
+  &__card {
     height: 33rem;
     width: 24rem;
     background-color: $white-two;
@@ -82,12 +87,74 @@
       gap: 1rem;
     }
 
-    &--contact-icons > * {
-      display: inline-block;
+    &--link {
+      text-decoration: none;
+      color: $dark-green-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       border: solid 2px $hospital-green;
-      height: 3.2rem;
-      width: 3.2rem;
+      height: 3rem;
+      width: 3rem;
       border-radius: 50%;
     }
+
+    &--icons {
+      scale: 150%;
+    }
+  }
+}
+
+
+//------------- PALETAS DE COLORES ------------- //
+
+/* paleta 1 */
+.section__preview--card.palette1 {
+
+  .section__preview--card--text--color-line {
+    background-color: $dirty-blue;
+  }
+
+  .section__preview--card--text--name {
+    color: $dark-green-blue;
+  }
+
+  .section__preview--card--link {
+    color: $dark-green-blue;
+    border: solid 2px $hospital-green;
+  }
+}
+
+/* paleta 2 */
+.section__preview--card.palette2 {
+
+  .section__preview--card--text--color-line {
+    background-color: $rusty-red;
+  }
+
+  .section__preview--card--text--name {
+    color: $dried-blood;
+  }
+
+  .section__preview--card--link {
+    color: $dried-blood;
+    border: solid 2px $tomato;
+  }
+}
+
+/* paleta 3 */
+.section__preview--card.palette3 {
+
+  .section__preview--card--text--color-line {
+    background-color: $faded-orange;
+  }
+
+  .section__preview--card--text--name {
+    color: $slate;
+  }
+
+  .section__preview--card--link {
+    color: $slate;
+    border: solid 2px $light-grey-blue;
   }
 }
