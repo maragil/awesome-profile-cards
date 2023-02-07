@@ -1,12 +1,18 @@
 .footer{
     width: 100vw;
-    position: fixed;
-    bottom: 0;
+    height: 10vh;
+    // position: fixed;
+    // bottom: 0;
     background-color:$white-two;
-    border-top: solid 1px $white-three;
+    border-top: solid 0.1rem $white-three;
     display:flex;
     flex-direction: column;
     align-items: center;
+        @media all and (min-width:768px){
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+    }
 
     &__text::first-letter{
         text-transform: uppercase;
@@ -16,21 +22,14 @@
         font-size: 1.4rem;
         color: $brownish-grey;
         opacity: 0.5;
-        margin: 18px 0 0 0;
+        margin: 1.8rem 0 0 0;
+            @media all and (min-width:768px){
+                padding-left: 4rem;
+        }
     }
     &__logo{
-        width: 103px;
-        height: 40px;
-        margin: 12px 47px 0 48px;
-    }
-}
-
-@media (min-width:768px){
-
-    .footer{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 40px 10px 41px;
+        width: 10.3rem;
+        height: 4rem;
+        margin: 1.2rem 4.7rem 2rem 4.8rem;
     }
 }

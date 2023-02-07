@@ -1,10 +1,9 @@
-.header{
-    background-color: $white-four;
-    text-align: center;
-
-    &__img{
-        width: 250px;
-        height: 63px;
-        margin: 95px 35px 36px 35px;
-    }
+.header__img{
+    width: 25rem;
+    height: 6.3rem;
+    margin: 9.5rem 3.5rem 3.6rem 3.5rem;
+        @media all and (min-width: 768px) {
+            width: 42rem;
+            height: 10.5rem;
+}
 }
