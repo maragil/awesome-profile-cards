@@ -1,4 +1,7 @@
 .footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
     background-color:$white-two;
     border-top: solid 1px $white-three;
     display:flex;

@@ -8,3 +8,13 @@
 html{
     font-size: 62.5%;
 }
+
+.main-card {
+    background-image: linear-gradient(to bottom, $white-four, $white-two) ;
+    @media all and (min-width: 768px) {
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    }
+}

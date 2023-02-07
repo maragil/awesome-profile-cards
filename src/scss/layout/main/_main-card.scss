@@ -5,3 +5,11 @@
 @import 'form-fill';
 @import 'form-share';
 @import 'layout/footer';
+
+.main-card__form{
+    padding: 0 2rem;
+
+    @media all and (min-width:768px) {
+        padding-left: 3rem;
+    }
+}
