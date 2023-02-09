@@ -6,7 +6,7 @@
 </legend>
 
 <!--div1-->
-<div class="main-card__form--fill--div js_fill-content">
+<div class="main-card__form--fill--div js_fill-content collapsed">
   <label for="fullname" class="main-card__form--fill--div--label"
     >Nombre Completo</label
   >
@@ -26,6 +26,7 @@
     type="text"
     name="jobDesc"
     placeholder="Ej: Front-end unicorn"
+    required
   />
 
   <label class="main-card__form--fill--div--label">Imagen de perfil</label>
@@ -46,6 +47,7 @@
     type="email"
     name="email"
     placeholder="sally-hill@gmail.com"
+    required
   />
 
   <label for="telnumber" class="main-card__form--fill--div--label"
@@ -54,8 +56,10 @@
   <input
     id="telnumber"
     class="main-card__form--fill--div--input"
-    type="number"
+    type="tel"
+    name="telefono"
     placeholder="Ej: 555-55-55-55"
+    required
   />
 
   <label for="linkedin" class="main-card__form--fill--div--label"
@@ -66,6 +70,7 @@
     class="main-card__form--fill--div--input"
     type="url"
     placeholder="Ej: linkedin.com/in/sally.hill"
+    required
   />
 
   <label for="github" class="main-card__form--fill--div--label" for=""
@@ -76,5 +81,6 @@
     class="main-card__form--fill--div--input"
     type="url"
     placeholder="Ej: @sally-hill"
+    required
   />
 </div>

@@ -1,41 +1,23 @@
 'use strict';
 
-function closeAllSections(){
-    designContent.classList.add('collapsed');
+
+function handleClickDesign(){
     fillContent.classList.add('collapsed');
     shareContent.classList.add('collapsed');
-}
-
-function openDesignSection(){
     designContent.classList.remove('collapsed');
-}
+};
 
-function openFillSection(){
+function handleClickFill(){
+    designContent.classList.add('collapsed');
+    shareContent.classList.add('collapsed');
     fillContent.classList.remove('collapsed');
-}
+};
 
-function openShareSection(){
+function handleClickShare(){
+    designContent.classList.add('collapsed');
+    fillContent.classList.add('collapsed');
     shareContent.classList.remove('collapsed');
-}
-
-function handleClickDesign(event){
-    event.preventDefault();
-    closeAllSections();
-    openDesignSection();
-} 
-
-function handleClickFill(event){
-    event.preventDefault();
-    closeAllSections();
-    openFillSection();
-} 
-
-function handleClickShare(event){
-    event.preventDefault();
-    closeAllSections();
-    openShareSection();
-} 
-
+};
 
 designLegend.addEventListener('click', (handleClickDesign));
 
