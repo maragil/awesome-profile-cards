@@ -1,14 +1,13 @@
 'use strict';
 
-const fillLegend = document.querySelector('.js_fill-legend');
-const fillContent = document.querySelector('.js_fill-content');
-const shareLegend = document.querySelector('.js_share-legend');
-const shareContent = document.querySelector('js_share-content');
-
-
 function closeAllSections(){
+    designContent.classList.add('collapsed');
     fillContent.classList.add('collapsed');
     shareContent.classList.add('collapsed');
+}
+
+function openDesignSection(){
+    designContent.classList.remove('collapsed');
 }
 
 function openFillSection(){
@@ -19,18 +18,29 @@ function openShareSection(){
     shareContent.classList.remove('collapsed');
 }
 
-function handleShowFillSection(event){
+function handleClickDesign(event){
+    event.preventDefault();
+    closeAllSections();
+    openDesignSection();
+} 
+
+function handleClickFill(event){
+    event.preventDefault();
     closeAllSections();
     openFillSection();
-}
+} 
 
-function handleShowShareSection(event){
+function handleClickShare(event){
+    event.preventDefault();
     closeAllSections();
     openShareSection();
-}
+} 
 
-fillLegend.addEventListener('click', (handleShowFillSection));
 
-shareLegend.addEventListener('click', (handleShowShareSection));
+designLegend.addEventListener('click', (handleClickDesign));
+
+fillLegend.addEventListener('click', (handleClickFill));
+
+shareLegend.addEventListener('click', (handleClickShare));
 
 
