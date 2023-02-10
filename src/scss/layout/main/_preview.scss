@@ -108,53 +108,53 @@
 
 //------------- PALETAS DE COLORES ------------- //
 
-/* paleta 1 */
-.section__preview--card.palette1 {
+/* paleta 3 */
+.preview__card.palette3 {
 
-  .section__preview--card--text--color-line {
-    background-color: $dirty-blue;
+  .preview__card--text--color-line {
+    background-color: $faded-orange;
   }
 
-  .section__preview--card--text--name {
-    color: $dark-green-blue;
+  .preview__card--text--name {
+    color: $slate;
   }
 
-  .section__preview--card--link {
-    color: $dark-green-blue;
-    border: solid 2px $hospital-green;
+  .preview__card--link {
+    color: $slate;
+    border: solid 2px $light-grey-blue;
   }
 }
 
 /* paleta 2 */
-.section__preview--card.palette2 {
+.preview__card.palette2 {
 
-  .section__preview--card--text--color-line {
+  .preview__card--text--color-line {
     background-color: $rusty-red;
   }
 
-  .section__preview--card--text--name {
+  .preview__card--text--name {
     color: $dried-blood;
   }
 
-  .section__preview--card--link {
+  .preview__card--link {
     color: $dried-blood;
     border: solid 2px $tomato;
   }
 }
 
-/* paleta 3 */
-.section__preview--card.palette3 {
+/* paleta 1 */
+.preview__card.palette1 {
 
-  .section__preview--card--text--color-line {
-    background-color: $faded-orange;
+  .preview__card--text--color-line {
+    background-color: $dirty-blue;
   }
 
-  .section__preview--card--text--name {
-    color: $slate;
+  .preview__card--text--name {
+    color: $dark-green-blue;
   }
 
-  .section__preview--card--link {
-    color: $slate;
-    border: solid 2px $light-grey-blue;
+  .preview__card--link {
+    color: $dark-green-blue;
+    border: solid 2px $hospital-green;
   }
 }

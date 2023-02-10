@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable strict */
 function handleInputName(event) {
   event.preventDefault();
   const nameInputValue = inputName.value;
@@ -53,3 +55,31 @@ inputEmail.addEventListener("input", handleInputEmail);
 inputLinkedin.addEventListener("input", handleInputLinkedin);
 
 inputGithub.addEventListener("input", handleInputGithub);
+
+
+// Change colors palette //
+
+function handleClickPalettes (event) {;
+  const target = event.target.id;
+  const current = event.currentTarget;
+  if (target === "color_1") {
+    previewCard.classList.remove("palette2");
+    previewCard.classList.remove("palette3");
+    previewCard.classList.add("palette1");
+  }
+
+if (target === "color_2") {
+    previewCard.classList.remove("palette1");
+    previewCard.classList.remove("palette3");
+    previewCard.classList.add("palette2");
+  }
+
+  if (target === "color_3") {
+    previewCard.classList.remove("palette2");
+    previewCard.classList.remove("palette1");
+    previewCard.classList.add("palette3");
+  }
+}
+
+designContent.addEventListener ("click", handleClickPalettes);
+
