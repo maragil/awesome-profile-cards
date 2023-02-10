@@ -7,6 +7,9 @@ const fillLegend = document.querySelector('.js_fill-legend');
 const fillContent = document.querySelector('.js_fill-content');
 const shareLegend = document.querySelector('.js_share-legend');
 const shareContent = document.querySelector('.js_share-content');
+const arrowDesign = document.querySelector(".js_arrow-design");
+const arrowFill = document.querySelector(".js_arrow-fill");
+const arrowShare = document.querySelector(".js_arrow-share");
 
 //Form input variables//
 const inputName = document.querySelector('.js_fill-name');
