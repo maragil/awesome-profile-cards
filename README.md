@@ -1,17 +1,6 @@
-Título e imagen de portada
-insignias
-indice
-descripción del proyecto
-estado del proyecto
-demostración de funciones y aplicaciones
-acceso al proyecto
-tecnologías utilizadas: VSC, HTML, CSS, SCSS, JS, GITHUB
-personas contribuyentes
-personas desarrolladoras del proyecto
-
 ![Imagen del proyecto](./src/images/logo-awesome-profile-cards.svg)
 
-###:book:Descripción del proyecto.
+##Descripción del proyecto.:book:
 
 Este repositorio contiene el proyecto del grupo 3 correspondiente al módulo 2 de la promo S del BootCamp Web Programming de Adalab.
 
@@ -24,7 +13,7 @@ El proyecto debe contar con dos páginas:
 - Una página landing de bienvenida.
 - Una página con la aplicación de crear tarjetas.
 
-###:bookmark_tabs:Especificaciones:
+##Especificaciones::bookmark_tabs:
 
 - Uso avanzado de formularios HTML.
 - Maquetación usando CSS avanzado (flex y grid).
@@ -35,7 +24,7 @@ El proyecto debe contar con dos páginas:
 - Uso de git para el control de versiones del proyecto.
 - Publicación del resultado en Internet usando GitHub Pages.
 
-###:pushpin:Demostración de funciones y aplicaciones.
+##Demostración de funciones y aplicaciones.:pushpin:
 
 La aplicación funciona siguiendo estos pasos:
 
@@ -45,7 +34,7 @@ La aplicación funciona siguiendo estos pasos:
 
 3. Permitir que el usuario pueda crear una web con su tarjeta de visita y compartirla por Twitter.
 
-###:hammer_and_wrench:Tecnologías utilizadas.
+##Tecnologías utilizadas.:hammer_and_wrench:
 
 - La maqutación del proyecto se ha realizado usando `HTML, CSS y SCSS`.
 
