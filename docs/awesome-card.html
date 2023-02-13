@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome Profile Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a5f3fa4005.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/awesome-card.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <header class="header-card">
+      <div class="header">
+          <img class="header__img" src="./assets/images/logo-awesome-profile-cards.svg" alt="Awesome profile-cards name">
+      </div>
+
+    </header>
+    <main class="main-card">
+      
+      <section class="preview">
+        <div class="preview__reset">
+          <a class="preview__reset--link" href=""
+            ><i class="fa-regular fa-trash-can"></i>RESET</a
+          >
+        </div>
+        <div class="preview__card js_preview-card palette1 palette2 palette3">
+          <div class="preview__card--text">
+            <div class="preview__card--text--color-line"></div>
+            <h2 class="preview__card--text--name js_preview-name">Nombre Apellido</h2>
+            <h3 class="preview__card--text--jobtitle js_preview-job">
+              Front-end developer
+            </h3>
+          </div>
+          <div class="preview__card--profile">
+            <!-- <img class="section__preview--card--profile-picture" src="" alt="" /> -->
+          </div>
+          <div class="preview__card--contact-icons">
+            <a class="preview__card--link js_preview-tel" href=""><i class="fa-solid fa-mobile-screen-button preview__card--icons"></i></a>
+
+            <a class="preview__card--link js_preview-email" href=""><i class="fa-regular fa-envelope preview__card--icons"></i></a>
+
+            <a class="preview__card--link js_preview-linkedin" href=""><i class="fa-brands fa-linkedin-in preview__card--icons"></i></a>
+
+            <a class="preview__card--link js_preview-github" href=""><i class="fa-brands fa-github-alt preview__card--icons"></i></a>
+          </div>
+        </div>
+      </section>
+
+          <form class="main-card__form">
+              <fileset class="main-card__form--design">
+                  <legend class="main-card__form--design--legend js_design-legend">
+                       <i class="fa-regular fa-object-ungroup"></i>
+                       <h2 class="main-card__form--design--legend--title">Diseña</h2>
+                       <i class="fa-solid fa-chevron-up arrow-collapsed js_arrow-design"></i>
+                  </legend>
+
+                  <div class="main-card__form--design--div js_design-content">
+                       <h3 class="main-card__form--design--div--title">Colores</h3>
+                       <div class="main-card__form--design--div--rectangle1">
+                            <input type="radio" name="color" id="color_1" value="green" class="js_palette1">
+                            <div class="main-card__form--design--div--rectangle1--1"></div>
+                            <div class="main-card__form--design--div--rectangle1--2"></div>
+                            <div class="main-card__form--design--div--rectangle1--3"></div>
+                       </div>
+                       <div class="main-card__form--design--div--rectangle2">
+                            <input type="radio" name="color" id="color_2" value="red" class="js_palette2">
+                            <div class="main-card__form--design--div--rectangle2--1"></div>
+                            <div class="main-card__form--design--div--rectangle2--2"></div>
+                            <div class="main-card__form--design--div--rectangle2--3"></div>
+                       </div>
+                       <div class="main-card__form--design--div--rectangle3">
+                            <input type="radio" name="color" id="color_3" value="blue" class="js_palette3">
+                            <div class="main-card__form--design--div--rectangle3--1"></div>
+                            <div class="main-card__form--design--div--rectangle3--2"></div>
+                            <div class="main-card__form--design--div--rectangle3--3"></div>
+                       </div>
+                  </div>
+
+              </fileset>
+              <fileset class="main-card__form--fill">
+                  <!--legend-->
+                  <legend title="Despliega la seción de rellena" class="main-card__form--fill--legend js_fill-legend">
+                    <i class="fa-regular fa-keyboard"></i>
+                    <h2 class="main-card__form--fill--legend--title">Rellena</h2>
+                    <i class="fa-solid fa-chevron-up arrow-collapsed js_arrow-fill"></i>
+                  </legend>
+
+                  <!--div1-->
+                  <div class="main-card__form--fill--div js_fill-content collapsed">
+                    <label for="fullname" class="main-card__form--fill--div--label"
+                      >Nombre Completo</label
+                    >
+                    <input
+                      id="fullname"
+                      class="main-card__form--fill--div--input js_fill-name"
+                      type="text"
+                      name="name"
+                      placeholder="Ej.: Sally Jill"
+                      required
+                    />
+
+                    <label for="job" class="main-card__form--fill--div--label">Puesto</label>
+                    <input
+                      id="job"
+                      class="main-card__form--fill--div--input js_fill-job"
+                      type="text"
+                      name="jobDesc"
+                      placeholder="Ej: Front-end unicorn"
+                      required
+                    />
+
+                    <label class="main-card__form--fill--div--label">Imagen de perfil</label>
+
+                    <!--div2-->
+                    <div class="main-card__form--fill--div--boxes">
+                      <label class="main-card__form--fill--div--boxes--label-image" for=""
+                        >Añadir Imagen</label
+                      >
+                      <!--div3-->
+                      <div class="main-card__form--fill--div--boxes--square"></div>
+                    </div>
+
+                    <label for="email" class="main-card__form--fill--div--label" >Email</label>
+                    <input
+                      id="email"
+                      class="main-card__form--fill--div--input js_fill-email"
+                      type="email"
+                      name="email"
+                      placeholder="sally-hill@gmail.com"
+                      required
+                    />
+
+                    <label for="telnumber" class="main-card__form--fill--div--label"
+                      >Teléfono</label
+                    >
+                    <input
+                      id="telnumber"
+                      class="main-card__form--fill--div--input js_fill-tel"
+                      type="tel"
+                      name="telefono"
+                      placeholder="Ej: 555-55-55-55"
+                      required
+                    />
+
+                    <label for="linkedin" class="main-card__form--fill--div--label"
+                      >Linkedin</label
+                    >
+                    <input
+                      id="linkedin"
+                      class="main-card__form--fill--div--input js_fill-linkedin"
+                      type="url"
+                      placeholder="Ej: linkedin.com/in/sally.hill"
+                      required
+                    />
+
+                    <label for="github" class="main-card__form--fill--div--label" for=""
+                      >Github</label
+                    >
+                    <input
+                      id="github"
+                      class="main-card__form--fill--div--input js_fill-github"
+                      type="url"
+                      placeholder="Ej: @sally-hill"
+                      required
+                    />
+                  </div>
+
+              </fileset>
+              <fileset class="main-card__form--share">
+                  <!--legend share-->
+                  <legend title="Despliega sección comparte" class="main-card__form--share--legend js_share-legend">
+                      <i class="fa-sharp fa-solid fa-share-nodes"></i>
+                      <h2 class="main-card__form--fill--legend--title">Comparte</h2>
+                      <i class="fa-solid fa-chevron-up arrow-collapsed js_arrow-share"></i>
+                  </legend>
+
+                  <!--share button-->
+
+                  <div class="main-card__form--share--button js_share-content collapsed">
+                      <i class="fa-regular fa-address-card"></i>
+                      <h2 class="main-card__form--share--button--title">Crear Tarjeta</h2>
+
+
+                  </div>
+              </fileset>
+          </form>
+
+    </main>
+      
+    <footer>
+      <div class="footer">
+      <p class="footer__text">awesome profile-cards @ 2018</p>
+      <img class="footer__logo" src="./assets/images/logo-adalab.png"  alt="Logo Adalab">
+      </div>
+
+    </footer>
+      
+    <script src="./assets/js/main.js"></script>
+    
+  </body>
+</html>
