@@ -24,7 +24,6 @@
       font-weight: bold;
       font-size: 1.8rem;
       text-transform: uppercase;
-      padding-bottom: 2.5rem;
       margin-top: 1rem;
       padding-left: 1rem;
       text-align: left;
@@ -39,6 +38,7 @@
   }
 
   &--div {
+    margin-top: 2.5rem;
     &--label {
       font-family: $font-OpenSans;
       color: $dark-green-blue;
