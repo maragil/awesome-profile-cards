@@ -100,6 +100,12 @@
       height: 3rem;
       width: 3rem;
       border-radius: 50%;
+
+      //------------- DISABLE BUTTONS IF INPUT IS EMPTY ------------- //
+      &--disabled {
+      pointer-events: none;
+      cursor: default;
+}
     }
 
     &--icons {
@@ -108,10 +114,9 @@
   }
 }
 
+//------------- COLOR PALETTES ------------- //
 
-//------------- PALETAS DE COLORES ------------- //
-
-/* paleta 3 */
+/* palette 3 */
 .preview__card.palette3 {
 
   .preview__card--text--color-line {
@@ -128,7 +133,7 @@
   }
 }
 
-/* paleta 2 */
+/* palette 2 */
 .preview__card.palette2 {
 
   .preview__card--text--color-line {
@@ -145,7 +150,7 @@
   }
 }
 
-/* paleta 1 */
+/* palette 1 */
 .preview__card.palette1 {
 
   .preview__card--text--color-line {

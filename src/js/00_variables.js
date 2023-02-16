@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable quotes */
 'use strict';
 
 //Collapsable variables//
