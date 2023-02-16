@@ -1,19 +1,19 @@
 .preview {
-  background-image: linear-gradient(to bottom, $silver, $pale-grey);
-  height: 50vh;
+  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  height: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 4rem 4.8rem 0 4.8rem;
+  padding: 4rem 4.8rem;
 
   @media all and (min-width: 768px) {
-    height: 100vh;
+    height: inherit;
     width: 40vw;
     border-radius: 0.6rem;
     justify-content: center;
   }
 
-  @media all and (min-width:1024px) {
+  @media all and (min-width: 1024px) {
     width: 70vw;
   }
 
@@ -33,7 +33,7 @@
       font-family: $font-OpenSans;
       font-size: 1.2rem;
     }
-    .fa-trash-can{
+    .fa-trash-can {
       padding-right: 0.4rem;
     }
   }
@@ -103,9 +103,9 @@
 
       //------------- DISABLE BUTTONS IF INPUT IS EMPTY ------------- //
       &--disabled {
-      pointer-events: none;
-      cursor: default;
-}
+        pointer-events: none;
+        cursor: default;
+      }
     }
 
     &--icons {
@@ -118,7 +118,6 @@
 
 /* palette 3 */
 .preview__card.palette3 {
-
   .preview__card--text--color-line {
     background-color: $faded-orange;
   }
@@ -135,7 +134,6 @@
 
 /* palette 2 */
 .preview__card.palette2 {
-
   .preview__card--text--color-line {
     background-color: $rusty-red;
   }
@@ -152,7 +150,6 @@
 
 /* palette 1 */
 .preview__card.palette1 {
-
   .preview__card--text--color-line {
     background-color: $dirty-blue;
   }
