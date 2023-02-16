@@ -1,6 +1,9 @@
 /* eslint-disable quotes */
 /* eslint-disable no-undef */
 /* eslint-disable strict */
+
+// Fill info into preview card
+
 function handleInputName(event) {
   event.preventDefault();
   const nameInputValue = inputName.value;
@@ -24,13 +27,13 @@ function handleInputJob(event) {
 function handleInputTel(event) {
   event.preventDefault();
   const telInputValue = inputTel.value;
-  previewTel.href = telInputValue;
+  previewTel.href = `tel:${telInputValue}`;
 }
 
 function handleInputEmail(event) {
   event.preventDefault();
   const emailInputValue = inputEmail.value;
-    previewEmail.href = `mailto:${emailInputValue}`;
+  previewEmail.href = `mailto:${emailInputValue}`;
 }
 
 function handleInputLinkedin(event) {
@@ -42,7 +45,7 @@ function handleInputLinkedin(event) {
 function handleInputGithub(event) {
   event.preventDefault();
   const githubInputValue = inputGithub.value;
-  previewGithub.href = InputValue;
+  previewGithub.href = githubInputValue;
 }
 
 inputName.addEventListener("input", handleInputName);
@@ -60,16 +63,16 @@ inputGithub.addEventListener("input", handleInputGithub);
 
 // Change colors palette //
 
-function handleClickPalettes (event) {;
+function handleClickPalettes (event) {
   const target = event.target.id;
-  const current = event.currentTarget;
+  /* const current = event.currentTarget; */
   if (target === "color_1") {
     previewCard.classList.remove("palette2");
     previewCard.classList.remove("palette3");
     previewCard.classList.add("palette1");
   }
 
-if (target === "color_2") {
+  if (target === "color_2") {
     previewCard.classList.remove("palette1");
     previewCard.classList.remove("palette3");
     previewCard.classList.add("palette2");
