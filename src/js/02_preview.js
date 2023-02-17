@@ -4,54 +4,76 @@
 
 // Fill info into preview card //
 
+const data={
+  palette: 1,
+  name: '',
+  job: '',
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: '',
+}
+
+
 function handleInputName(event) {
   event.preventDefault();
-  const nameInputValue = inputName.value;
-  if (nameInputValue === '') {
-    previewName.innerHTML = 'Nombre Apellido';
-  } else {
-    previewName.innerHTML = nameInputValue;
-  }
+  data.name = inputName.value;
+  updatePreview();
 }
 
 function handleInputJob(event) {
   event.preventDefault();
-  const jobInputValue = inputJob.value;
-  if (jobInputValue === '') {
-    previewJob.innerHTML = 'Front-end developer';
-  } else {
-    previewJob.innerHTML = jobInputValue;
-    previewJob.classList.remove("preview__card--link--disabled");
-  }
+  data.job = inputJob.value;
+  
 }
 
 function handleInputTel(event) {
   event.preventDefault();
-  const telInputValue = inputTel.value;
-  previewTel.href = `tel:${telInputValue}`;
-  previewTel.classList.remove("preview__card--link--disabled");
+  data.phone = inputTel.value;
+  updatePreview();
 }
 
 function handleInputEmail(event) {
   event.preventDefault();
-  const emailInputValue = inputEmail.value;
-  previewEmail.href = `mailto:${emailInputValue}`;
-  previewEmail.classList.remove("preview__card--link--disabled");
+  data.email = inputEmail.value;
+  updatePreview();
 }
 
 function handleInputLinkedin(event) {
   event.preventDefault();
-  const linkedinInputValue = inputLinkedin.value;
-  previewLinkedin.href = linkedinInputValue;
-  previewLinkedin.classList.remove("preview__card--link--disabled");
+  data.linkedin = inputLinkedin.value;
+  updatePreview();
 }
 
 function handleInputGithub(event) {
   event.preventDefault();
-  const githubInputValue = inputGithub.value;
-  previewGithub.href = githubInputValue;
+  data.github = inputGithub.value;
+  updatePreview();
+}
+
+const updatePreview = () => {
+  if (data.name === '') {
+    previewName.innerHTML = 'Nombre Apellido';
+  } else {
+    previewName.innerHTML = data.name;
+  } 
+  if (data.job === '') {
+    previewJob.innerHTML = 'Front-end developer';
+  } else {
+    previewJob.innerHTML = data.job;
+    previewJob.classList.remove("preview__card--link--disabled");
+  }
+  previewTel.href = `tel:${data.phone}`;
+  previewTel.classList.remove("preview__card--link--disabled");
+  previewEmail.href = `mailto:${data.email}`;
+  previewEmail.classList.remove("preview__card--link--disabled");
+  previewLinkedin.href = data.linkedin;
+  previewLinkedin.classList.remove("preview__card--link--disabled");
+  previewGithub.href = data.github;
   previewGithub.classList.remove("preview__card--link--disabled");
 }
+
 
 inputName.addEventListener('input', handleInputName);
 
@@ -90,3 +112,20 @@ function handleClickPalettes(event) {
 }
 
 designContent.addEventListener("click", handleClickPalettes);
+
+//botón reset
+
+const handleClickReset =()=> {
+  data.palette= 1;
+  data.name= '';
+  data.job= '';
+  data.phone= '';
+  data.email= '';
+  data.linkedin= '';
+  data.github= '';
+  data.photo= '';
+  updatePreview();
+}
+
+
+btnReset.addEventListener('click', handleClickReset);

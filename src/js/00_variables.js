@@ -30,7 +30,11 @@ const previewLinkedin = document.querySelector(".js_preview-linkedin");
 const previewGithub = document.querySelector(".js_preview-github");
 const previewCard = document.querySelector(".js_preview-card");
 
+
 //Input color palette variables//
 const palette1 = document.querySelector(".js_palette1");
 const palette2 = document.querySelector(".js_palette2");
 const palette3 = document.querySelector(".js_palette3");
+
+//reset
+const btnReset = document.querySelector(".js_reset");
