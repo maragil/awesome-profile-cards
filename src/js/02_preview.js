@@ -13,7 +13,7 @@ const data={
   linkedin: '',
   github: '',
   photo: '',
-}
+};
 
 
 function handleInputName(event) {
@@ -25,7 +25,7 @@ function handleInputName(event) {
 function handleInputJob(event) {
   event.preventDefault();
   data.job = inputJob.value;
-  
+  updatePreview();
 }
 
 function handleInputTel(event) {
@@ -72,7 +72,7 @@ const updatePreview = () => {
   previewLinkedin.classList.remove("preview__card--link--disabled");
   previewGithub.href = data.github;
   previewGithub.classList.remove("preview__card--link--disabled");
-}
+};
 
 
 inputName.addEventListener('input', handleInputName);
@@ -115,7 +115,8 @@ designContent.addEventListener("click", handleClickPalettes);
 
 //botón reset
 
-const handleClickReset =()=> {
+const handleClickReset =(ev)=> {
+  ev.preventDefault();
   data.palette= 1;
   data.name= '';
   data.job= '';
@@ -124,8 +125,14 @@ const handleClickReset =()=> {
   data.linkedin= '';
   data.github= '';
   data.photo= '';
+  inputName.value ='';
+  inputJob.value='';
+  inputEmail.value ='';
+  inputTel.value ='';
+  inputLinkedin.value ='';
+  inputGithub.value ='';
   updatePreview();
-}
+};
 
 
 btnReset.addEventListener('click', handleClickReset);

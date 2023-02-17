@@ -73,6 +73,11 @@
         padding-left: 2.2rem;
         padding-right: 2.2rem;
         padding-bottom: 1rem;
+        cursor: pointer;
+
+        &--input--images{
+          display: none;
+        }
 
       }
       &--square {
