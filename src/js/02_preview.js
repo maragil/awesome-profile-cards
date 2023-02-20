@@ -125,12 +125,16 @@ const handleClickReset =(ev)=> {
   data.linkedin= '';
   data.github= '';
   data.photo= '';
+  palette1.checked= true;
   inputName.value ='';
   inputJob.value='';
   inputEmail.value ='';
   inputTel.value ='';
   inputLinkedin.value ='';
   inputGithub.value ='';
+  previewCard.classList.remove("palette2");
+  previewCard.classList.remove("palette3");
+  previewCard.classList.add("palette1");
   updatePreview();
 };
 
