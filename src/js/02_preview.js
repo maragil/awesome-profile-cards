@@ -4,7 +4,7 @@
 
 // Fill info into preview card //
 
-const data={
+const data = {
   palette: 1,
   name: '',
   job: '',
@@ -16,7 +16,7 @@ const data={
 };
 
 
-function handleInputName(event) {
+/*function handleInputName(event) {
   event.preventDefault();
   data.name = inputName.value;
   updatePreview();
@@ -51,14 +51,24 @@ function handleInputGithub(event) {
   data.github = inputGithub.value;
   updatePreview();
 }
+*/
+const inputList = document.querySelectorAll('.js__input');
+
+function handleInputList(event) {
+  data[event.target.id] = event.target.value;
+  updatePreview();
+}
+
+for (const eachInput of inputList) {
+  eachInput.addEventListener('input', handleInputList);
+}
 
 const updatePreview = () => {
   if (data.name === '') {
     previewName.innerHTML = 'Nombre Apellido';
   } else {
     previewName.innerHTML = data.name;
-  } 
-  if (data.job === '') {
+  } if (data.job === '') {
     previewJob.innerHTML = 'Front-end developer';
   } else {
     previewJob.innerHTML = data.job;
@@ -74,7 +84,7 @@ const updatePreview = () => {
   previewGithub.classList.remove("preview__card--link--disabled");
 };
 
-
+/*
 inputName.addEventListener('input', handleInputName);
 
 inputJob.addEventListener('input', handleInputJob);
@@ -86,7 +96,7 @@ inputEmail.addEventListener('input', handleInputEmail);
 inputLinkedin.addEventListener('input', handleInputLinkedin);
 
 inputGithub.addEventListener('input', handleInputGithub);
-
+*/
 // Change colors palette //
 
 function handleClickPalettes(event) {
