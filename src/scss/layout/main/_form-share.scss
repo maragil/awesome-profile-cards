@@ -1,7 +1,9 @@
 .main-card__form--share {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
   padding-top: 1.3rem;
 
   &--legend {
@@ -41,9 +43,6 @@
   &--button{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
     background-color: $dull-orange;
     color: $white-two;
     border-radius: 12px;
@@ -70,4 +69,16 @@
         color: inherit;
     }
   }
+    &--twitter {
+      &--text {
+        font-family: $font-OpenSans;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $gunmetal;
+      }
+      &--button{
+        align-items: center;
+      }
+    }
 }
