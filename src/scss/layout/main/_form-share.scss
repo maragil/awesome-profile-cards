@@ -70,6 +70,11 @@
     }
   }
     &--twitter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
       &--text {
         font-family: $font-OpenSans;
         text-align: center;
@@ -77,8 +82,34 @@
         font-weight: 600;
         color: $gunmetal;
       }
-      &--button{
-        align-items: center;
+      &--link{
+        font-family: $font-OpenSans;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        text-decoration: none;
+        color: $dull-orange;
+        font-size: 1.2rem;
+        
       }
+      &--button{
+        background-color: #00a0f5;
+        color: white;
+        align-items: center;
+        border: 0px solid transparent;
+        border-radius: 3px;
+        width: 18rem;
+        height: 3rem;
+
+        &--linkTwitter{
+          color: white;
+          font-family: $font-OpenSans;
+          font-size: 1.4rem;
+          text-decoration: none;
+          gap: 1rem;
+        }
+      }
+    .fa-brands{
+      color: white;
+    }
     }
 }
