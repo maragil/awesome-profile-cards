@@ -17,14 +17,14 @@
   <body>
     <header class="header-card">
       <div class="header">
-          <img class="header__img" src="./assets/images/logo-awesome-profile-cards.svg" alt="Awesome profile-cards name">
+          <a href="index.html"><img class="header__img" src="./assets/images/logo-awesome-profile-cards.svg" alt="Awesome profile-cards name"></a>
       </div>
 
     </header>
     <main class="main-card">
       
       <section class="preview">
-        <div class="preview__reset">
+        <div class="preview__reset js_reset">
           <a class="preview__reset--link" href=""
             ><i class="fa-regular fa-trash-can"></i>RESET</a
           >
@@ -37,17 +37,17 @@
               Front-end developer
             </h3>
           </div>
-          <div class="preview__card--profile">
+          <div class="preview__card--profile js__profile-image">
             <!-- <img class="section__preview--card--profile-picture" src="" alt="" /> -->
           </div>
           <div class="preview__card--contact-icons">
-            <a class="preview__card--link js_preview-tel" href=""><i class="fa-solid fa-mobile-screen-button preview__card--icons"></i></a>
+            <a class="preview__card--link preview__card--link--disabled js_preview-tel" href=""><i class="fa-solid fa-mobile-screen-button preview__card--icons"></i></a>
 
-            <a class="preview__card--link js_preview-email" href=""><i class="fa-regular fa-envelope preview__card--icons"></i></a>
+            <a class="preview__card--link preview__card--link--disabled js_preview-email" href=""><i class="fa-regular fa-envelope preview__card--icons"></i></a>
 
-            <a class="preview__card--link js_preview-linkedin" href=""><i class="fa-brands fa-linkedin-in preview__card--icons"></i></a>
+            <a class="preview__card--link preview__card--link--disabled js_preview-linkedin" href="" target=”_blank”><i class="fa-brands fa-linkedin-in preview__card--icons"></i></a>
 
-            <a class="preview__card--link js_preview-github" href=""><i class="fa-brands fa-github-alt preview__card--icons"></i></a>
+            <a class="preview__card--link preview__card--link--disabled js_preview-github" href="" target=”_blank”><i class="fa-brands fa-github-alt preview__card--icons"></i></a>
           </div>
         </div>
       </section>
@@ -63,19 +63,19 @@
                   <div class="main-card__form--design--div js_design-content">
                        <h3 class="main-card__form--design--div--title">Colores</h3>
                        <div class="main-card__form--design--div--rectangle1">
-                            <input type="radio" name="color" id="color_1" value="green" class="js_palette1">
+                            <input type="radio" name="color" id="color_1" value="green" class="main-card__form--design--div--rectangle1--input js_palette1" checked >
                             <div class="main-card__form--design--div--rectangle1--1"></div>
                             <div class="main-card__form--design--div--rectangle1--2"></div>
                             <div class="main-card__form--design--div--rectangle1--3"></div>
                        </div>
                        <div class="main-card__form--design--div--rectangle2">
-                            <input type="radio" name="color" id="color_2" value="red" class="js_palette2">
+                            <input type="radio" name="color" id="color_2" value="red" class="main-card__form--design--div--rectangle2--input js_palette2">
                             <div class="main-card__form--design--div--rectangle2--1"></div>
                             <div class="main-card__form--design--div--rectangle2--2"></div>
                             <div class="main-card__form--design--div--rectangle2--3"></div>
                        </div>
                        <div class="main-card__form--design--div--rectangle3">
-                            <input type="radio" name="color" id="color_3" value="blue" class="js_palette3">
+                            <input type="radio" name="color" id="color_3" value="blue" class="main-card__form--design--div--rectangle3--input js_palette3">
                             <div class="main-card__form--design--div--rectangle3--1"></div>
                             <div class="main-card__form--design--div--rectangle3--2"></div>
                             <div class="main-card__form--design--div--rectangle3--3"></div>
@@ -97,8 +97,8 @@
                       >Nombre Completo</label
                     >
                     <input
-                      id="fullname"
-                      class="main-card__form--fill--div--input js_fill-name"
+                      id="name"
+                      class="main-card__form--fill--div--input js_fill-name js__input"
                       type="text"
                       name="name"
                       placeholder="Ej.: Sally Jill"
@@ -108,7 +108,7 @@
                     <label for="job" class="main-card__form--fill--div--label">Puesto</label>
                     <input
                       id="job"
-                      class="main-card__form--fill--div--input js_fill-job"
+                      class="main-card__form--fill--div--input js_fill-job js__input"
                       type="text"
                       name="jobDesc"
                       placeholder="Ej: Front-end unicorn"
@@ -119,29 +119,30 @@
 
                     <!--div2-->
                     <div class="main-card__form--fill--div--boxes">
-                      <label class="main-card__form--fill--div--boxes--label-image" for=""
+                      <label class="main-card__form--fill--div--boxes--label-image" for="photo"
                         >Añadir Imagen</label
                       >
+                      <input type="file" class="main-card__form--fill--div--boxes--label-image--input--images js__profile-upload-btn" name="photo" id="photo">
                       <!--div3-->
-                      <div class="main-card__form--fill--div--boxes--square"></div>
+                      <div class="main-card__form--fill--div--boxes--square js__profile-preview"></div>
                     </div>
 
                     <label for="email" class="main-card__form--fill--div--label" >Email</label>
                     <input
                       id="email"
-                      class="main-card__form--fill--div--input js_fill-email"
+                      class="main-card__form--fill--div--input js_fill-email js__input"
                       type="email"
                       name="email"
                       placeholder="sally-hill@gmail.com"
                       required
                     />
 
-                    <label for="telnumber" class="main-card__form--fill--div--label"
+                    <label for="phone" class="main-card__form--fill--div--label"
                       >Teléfono</label
                     >
                     <input
-                      id="telnumber"
-                      class="main-card__form--fill--div--input js_fill-tel"
+                      id="phone"
+                      class="main-card__form--fill--div--input js_fill-tel js__input"
                       type="tel"
                       name="telefono"
                       placeholder="Ej: 555-55-55-55"
@@ -153,20 +154,20 @@
                     >
                     <input
                       id="linkedin"
-                      class="main-card__form--fill--div--input js_fill-linkedin"
+                      class="main-card__form--fill--div--input js_fill-linkedin js__input"
                       type="url"
                       placeholder="Ej: linkedin.com/in/sally.hill"
                       required
                     />
 
-                    <label for="github" class="main-card__form--fill--div--label" for=""
+                    <label for="github" class="main-card__form--fill--div--label"
                       >Github</label
                     >
                     <input
                       id="github"
-                      class="main-card__form--fill--div--input js_fill-github"
+                      class="main-card__form--fill--div--input js_fill-github js__input"
                       type="url"
-                      placeholder="Ej: @sally-hill"
+                      placeholder="Ej: github.com/sallyhill"
                       required
                     />
                   </div>
@@ -181,11 +182,21 @@
                   </legend>
 
                   <!--share button-->
-
-                  <div class="main-card__form--share--button js_share-content collapsed">
+                  <div class="main-card__form--share js_share-content collapsed">
+                  <div class="main-card__form--share--button">
                       <i class="fa-regular fa-address-card"></i>
-                      <h2 class="main-card__form--share--button--title">Crear Tarjeta</h2>
+                      <input type="button" class="main-card__form--share--button--title js_create_button" value="Crear Tarjeta"/>
+                  </div>
 
+                  <div class="main-card__form--share--twitter">
+                      <h2 class="main-card__form--share--twitter--text js_infoText"></h2>
+                      <a class="main-card__form--share--twitter--link js_shareLink collapsed" href="" target="_blank"></a>
+                      <button class="main-card__form--share--twitter--button collapsed js_buttonTwitter">
+                          <a class="main-card__form--share--twitter--button--linkTwitter js_shareLinkTwitter" target="_blank" href="https://twitter.com/intent/tweet?">
+                              <i class="fa-brands fa-twitter"></i>  Compartir en twitter</a>
+                      </button>
+                      
+                  </div>
 
                   </div>
               </fileset>
@@ -196,7 +207,7 @@
     <footer>
       <div class="footer">
       <p class="footer__text">awesome profile-cards @ 2018</p>
-      <img class="footer__logo" src="./assets/images/logo-adalab.png"  alt="Logo Adalab">
+      <a href="https://adalab.es/" target="_blank"><img class="footer__logo" src="./assets/images/logo-adalab.png"  alt="Logo Adalab"></a>
       </div>
 
     </footer>

@@ -5,7 +5,6 @@
 	"dependencies": {
 		"browser-sync": "^2.26.12",
 		"del": "^5.1.0",
-		"eslint": "^7.1.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "*",
 		"gulp-clean-css": "*",
@@ -23,6 +22,9 @@
 		"run-sequence": "*"
 	},
 	"devDependencies": {
+		"eslint": "^8.34.0",
+		"eslint-config-google": "^0.14.0",
+		"eslint-plugin-react": "^7.32.2",
 		"lodash.template": ">=4.5.0"
 	},
 	"scripts": {
