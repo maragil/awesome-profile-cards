@@ -27,6 +27,7 @@ function handleClickSend(event){ //dentro de esta función tiene q ocurrir el FE
                 shareLink.href = data.cardURL;
                 shareLink.innerHTML = data.cardURL;
                 btnTwitter.classList.remove('collapsed');
+                shareLinkTwitter.href = `https://twitter.com/intent/tweet?text=Echa%20un%20vistazo%20a%20mi%20tarjeta:&url=${data.cardURL}`;
                 contentButton.classList.add('selected');
             }
         });
