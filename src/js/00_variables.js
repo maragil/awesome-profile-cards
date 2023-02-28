@@ -43,3 +43,6 @@ const btnReset = document.querySelector(".js_reset");
 const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
+
+//localStorage
+const localStorageData = JSON.parse(localStorage.getItem("userData"));

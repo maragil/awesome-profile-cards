@@ -3,7 +3,7 @@
 /* eslint-disable strict */
 
 // Fill info into preview card //
-const data = {
+let data = {
   palette: 1,
   name: '',
   job: '',
@@ -52,6 +52,8 @@ const updatePreview = () => {
   //   profileImage.style.backgroundImage = `url(../images/image-preview-default.jpg)`;
   //   profilePreview.style.backgroundImage = `url(../images/image-preview-default.jpg)`;
   // }
+
+  localStorage.setItem("userData", JSON.stringify(data));
 };
 
 
@@ -107,6 +109,7 @@ const handleClickReset = (ev) => {
   profileImage.style.backgroundImage = data.photo;
   profilePreview.style.backgroundImage = data.photo;
   updatePreview();
+  localStorage.removeItem("userData");
 };
 
 btnReset.addEventListener("click", handleClickReset);
