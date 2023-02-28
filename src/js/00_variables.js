@@ -38,3 +38,8 @@ const palette3 = document.querySelector(".js_palette3");
 
 //reset
 const btnReset = document.querySelector(".js_reset");
+
+//avatar
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');
