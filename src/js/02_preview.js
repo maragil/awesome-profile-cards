@@ -63,18 +63,21 @@ function handleClickPalettes(event) {
     previewCard.classList.remove("palette2");
     previewCard.classList.remove("palette3");
     previewCard.classList.add("palette1");
+    data.palette = "1";
   }
 
   if (target === "color_2") {
     previewCard.classList.remove("palette1");
     previewCard.classList.remove("palette3");
     previewCard.classList.add("palette2");
+    data.palette = "2";
   }
 
   if (target === "color_3") {
     previewCard.classList.remove("palette2");
     previewCard.classList.remove("palette1");
     previewCard.classList.add("palette3");
+    data.palette = "3";
   }
 }
 
