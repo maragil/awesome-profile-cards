@@ -48,6 +48,10 @@ const updatePreview = () => {
   previewLinkedin.classList.remove("preview__card--link--disabled");
   previewGithub.href = data.github;
   previewGithub.classList.remove("preview__card--link--disabled");
+  // if (profileImage.style.backgroundImage===""){
+  //   profileImage.style.backgroundImage = `url(../images/image-preview-default.jpg)`;
+  //   profilePreview.style.backgroundImage = `url(../images/image-preview-default.jpg)`;
+  // }
 };
 
 
@@ -98,7 +102,7 @@ const handleClickReset = (ev) => {
   previewCard.classList.remove("palette3");
   previewCard.classList.add("palette1");
   profileImage.style.backgroundImage = data.photo;
-  profilePreview.style.backgroundImage = "";
+  profilePreview.style.backgroundImage = data.photo;
   updatePreview();
 };
 

@@ -5,6 +5,7 @@ const infoText = document.querySelector('.js_infoText');
 const btnTwitter = document.querySelector('.js_buttonTwitter');
 const shareLink = document.querySelector('.js_shareLink');
 const shareLinkTwitter = document.querySelector('.js_shareLinkTwitter');
+const contentButton = document.querySelector('.js_shareButtonContent');
 
 function handleClickSend(event){ //dentro de esta función tiene q ocurrir el FETCH, para q cuando la usuaria haga click los datos se envíen
     event.preventDefault();
@@ -26,6 +27,7 @@ function handleClickSend(event){ //dentro de esta función tiene q ocurrir el FE
                 shareLink.href = data.cardURL;
                 shareLink.innerHTML = data.cardURL;
                 btnTwitter.classList.remove('collapsed');
+                contentButton.classList.add('selected');
             }
         });
 }
