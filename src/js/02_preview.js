@@ -44,9 +44,9 @@ const updatePreview = () => {
   previewTel.classList.remove("preview__card--link--disabled");
   previewEmail.href = `mailto:${data.email}`;
   previewEmail.classList.remove("preview__card--link--disabled");
-  previewLinkedin.href = data.linkedin;
+  previewLinkedin.href = `https://www.linkedin.com/in/${data.linkedin}`;
   previewLinkedin.classList.remove("preview__card--link--disabled");
-  previewGithub.href = data.github;
+  previewGithub.href = `https://github.com/${data.github}`;
   previewGithub.classList.remove("preview__card--link--disabled");
   // if (profileImage.style.backgroundImage===""){
   //   profileImage.style.backgroundImage = `url(../images/image-preview-default.jpg)`;
