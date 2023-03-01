@@ -8,17 +8,28 @@ if (localStorageData) {
   inputLinkedin.value = data.linkedin;
   inputGithub.value = data.github;
 
+  if (data.photo === "") {
+    profileImage.style.backgroundImage = data.photo;
+  } else {
+    profileImage.style.backgroundImage = `url(${data.photo})`;
+    profilePreview.style.backgroundImage = `url(${data.photo})`;
+  }
+
   if (data.palette === "1") {
     palette1.checked = true;
     previewCard.classList.remove("palette2");
     previewCard.classList.remove("palette3");
     previewCard.classList.add("palette1");
-  } else if (data.palette === "2") {
+  } 
+  
+  if (data.palette === "2") {
     palette2.checked = true;
     previewCard.classList.remove("palette1");
     previewCard.classList.remove("palette3");
-    previewCard.classList.add("palette2");
-  } else {
+    previewCard.classList.add("palette2"); 
+  }
+
+  if (data.palette === "3") {
     palette3.checked = true;
     previewCard.classList.remove("palette2");
     previewCard.classList.remove("palette1");
