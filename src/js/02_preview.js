@@ -108,6 +108,7 @@ const handleClickReset = (ev) => {
   previewCard.classList.add("palette1");
   profileImage.style.backgroundImage = data.photo;
   profilePreview.style.backgroundImage = data.photo;
+  fileField.value = "";
   updatePreview();
   localStorage.removeItem("userData");
 };
