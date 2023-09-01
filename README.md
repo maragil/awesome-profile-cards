@@ -1,4 +1,4 @@
-![Imagen del proyecto](./src/images/logo-awesome-profile-cards.svg)
+<a href="https://awesome-profile-cards.maragil.com/" target="_blank" rel="noreferrer"><img src="./src/images/logo-awesome-profile-cards.svg" alt="logo"/></a>
 
 ## Descripción del proyecto.:book:
 
