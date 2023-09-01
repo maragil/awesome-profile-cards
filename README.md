@@ -16,11 +16,11 @@ Esta evaluación tuvo como objetivo la realización de una aplicación web inter
 
 - Uso avanzado de formularios HTML.
 - Maquetación usando CSS avanzado (flex y grid).
-- Uso de mediaqueries para que el diseño sea adpatable al dispositivo usando la estrategia mobile first.
+- Uso de mediaqueries para que el diseño sea adpatable al dispositivo usando la estrategia Mobile First.
 - Gestión de eventos en el navegador.
 - Acceso y envío de datos a un servidor.
 - Almacenamiento en local usando LocalStorage.
-- Uso de git para el control de versiones del proyecto.
+- Uso de Git para el control de versiones del proyecto.
 - Publicación del resultado en Internet usando GitHub Pages.
 
 
@@ -69,4 +69,4 @@ Este proyecto ha sido creado utilizando una combinación de herramientas y tecno
 ## 📬 CONTACTO
 ¡Espero que te haya gustado esta aplicación! 💚
 
-Si quieres ver este u otros proyectos los puedes encontrar en mi porfolio: <https://www.maragil.com> 
+Si quieres ver este y otros proyectos los puedes encontrar en mi porfolio: <https://www.maragil.com> 
