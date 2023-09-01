@@ -3,7 +3,7 @@
 <p/>
 
 
-## 📝 Descripción del proyecto
+## 📝 Descripción del proyecto.
 
 Esta aplicación web es el resultado del proyecto final grupal correspondiente al módulo 2 del Bootcamp de [Adalab](https://adalab.es/) de Desarrollo Web.
 Esta evaluación tuvo como objetivo la realización de una aplicación web interactiva que permitiera crear una tarjeta de visita personalizada. En la página web se podrán introducir datos personales y profesionales, y obtener una vista maquetada con la información.
@@ -24,7 +24,7 @@ Esta evaluación tuvo como objetivo la realización de una aplicación web inter
 - Publicación del resultado en Internet usando GitHub Pages.
 
 
-## 📑 Funcionalidades
+## 📑 Funcionalidades.
 
 La aplicación funciona siguiendo estos pasos:
 
@@ -52,6 +52,19 @@ Para poder ejecutar y utilizar este proyecto, sigue los siguientes pasos:
 4. Inicia la aplicación ejecutando el comando `npm start`.
 
 
+## 📦 Despliegue.
+
+La aplicación está configurada para que se pueda desplegar de manera sencilla en GitHub Pages siguiendo los siguientes pasos:
+  1. Asegúrate de que todos los cambios necesarios estén confirmados y guardados en tu repositorio.
+  2. Ejecuta el siguiente comando en tu terminal para generar los archivos necesarios para el despliegue:
+     
+     ```bash
+     npm run docs
+     
+     ```
+  3. Una vez completado, los archivos de construcción se encontrarán en la carpeta `docs`.
+
+
 ## 🧰 Herramientas y tecnologías.
 
 Este proyecto ha sido creado utilizando una combinación de herramientas y tecnologías. A continuación, te presento las principales herramientas que he utilizado:
@@ -66,7 +79,7 @@ Este proyecto ha sido creado utilizando una combinación de herramientas y tecno
  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/> </a>
 </p>
 
-## 📬 CONTACTO
+## 📬 CONTACTO.
 ¡Espero que te haya gustado esta aplicación! 💚
 
 Si quieres ver este y otros proyectos los puedes encontrar en mi porfolio: <https://www.maragil.com> 
