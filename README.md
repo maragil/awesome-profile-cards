@@ -79,7 +79,7 @@ Este proyecto ha sido creado utilizando una combinación de herramientas y tecno
  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/> </a>
 </p>
 
-## 📬 CONTACTO.
+## 📬 Contacto.
 ¡Espero que te haya gustado esta aplicación! 💚
 
 Si quieres ver este y otros proyectos los puedes encontrar en mi porfolio: <https://www.maragil.com> 
